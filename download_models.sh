@@ -5,4 +5,8 @@ do
     rm "$t".zip
 done
 
-cp -r inference/checkpoints/* models/v1
+mkdir inference/models
+mkdir inference/models/v1
+mkdir inference/output_audios
+
+cp -r inference/checkpoints/* inference/models/v1
