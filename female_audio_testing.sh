@@ -22,5 +22,5 @@ for lang in hi en+hi en ta; do
     --vocoder_path checkpoints/"$lang"/hifigan/best_model.pth \
     --vocoder_config_path checkpoints/"$lang"/hifigan/config.json \
     --speaker_idx female \
-    --out_path "./output_audios/${lang}_male.wav"
+    --out_path "./output_audios/${lang}_female.wav"
 done
